@@ -52,6 +52,8 @@ Indsæt en grundlæggende html struktur på `home.ejs` som indeholder en `header
   * home.ejs
   * product.ejs
 
+*(nu burde det være muligt at se siden i browseren)*
+
 --- 
 
 Samtidigt skal der oprettes en route for hver side, det foregår i filen `/server/routes/routes.js`
@@ -66,7 +68,9 @@ Der skal oprettes 2 routes mere, her er et eksempel på hvordan `produkt` routen
    });
 ```
 
-Opret en der ligner, men hvor der står `contact` istedet for `product`
+Opret en der ligner eksemplet, men hvor der står `contact` istedet for `product`
+
+**Test at du i browseren kan få vist siden!** http://localhost:3000/product
 
 ## Stylesheets og scripts
 Opret en fil kaldet `styles.ejs` i `/server/views/partials/` mappen, og i den fil skives `<link rel="stylesheet" href="/styles.css">` tagget som peger på det stylesheet som ligger i roden af public mappen.
@@ -84,7 +88,7 @@ Men i stedet for at linke direkte til stylesheet fra `home.ejs` så inkluderes `
 
 Benyt samme koncept til at indlæse `scripts.js` filen, som skal indeholde et `<script src="/scripts.js"></script>` tag. placer include som det sidste inden `</body>` tagget.
 
-## elementerne på siden
+## Elementerne på siden
 
 Den simple hjemmeside vi skal sætte op består af nogle elementer som går igen på flere sider, `nav` f.eks. skal være på alle siderne. Men der er også indhold som er unikt for hver side, f.eks. den tekst der skal være på forsiden.
 
@@ -100,4 +104,6 @@ De elementer der benyttes på mere end 1 side skal trækkes ud i en `.ejs` fil s
 Opret dem og inkluder dem der hvor de hører til, på de sider hvor de skal vises.
 
 `offers` er tænkt som den tilbud kolonne der skal sidde til højre på produkt og kontakt siden.
+
+Sørg for at indsætte lidt html og tekst i hver fil, ellers vil der ikke ske noget når filen inkluderes.
 
