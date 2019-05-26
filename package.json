@@ -1,0 +1,26 @@
+{
+   "name": "wuhf01-views-and-templates",
+   "version": "1.0.0",
+   "description": "",
+   "main": "app.js",
+   "scripts": {
+      "start": "nodemon app.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/rts-cmk-wuhf01/views-and-templates.git"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/rts-cmk-wuhf01/views-and-templates/issues"
+   },
+   "homepage": "https://github.com/rts-cmk-wuhf01/views-and-templates#readme",
+   "dependencies": {
+      "ejs": "^2.6.1",
+      "express": "^4.17.0",
+      "morgan": "^1.9.1"
+   }
+}
