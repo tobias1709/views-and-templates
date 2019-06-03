@@ -87,7 +87,7 @@ main{
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
 	background-color: #3b3b3b;
-	transition: .2s;
+	transition: 1s;
 }
 
 .box h2{
@@ -97,6 +97,7 @@ main{
 
 .box:hover{
 	transform: scale(1.05);
+	transform: rotate(360deg);
 	cursor: pointer;
 	text-decoration: underline;
 }
